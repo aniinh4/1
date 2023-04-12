@@ -1,0 +1,54 @@
+<!DOCTYPE>
+
+<html>
+<head>
+<meta charset="UTP-8">
+<title>Document</title>
+</head>
+<script>
+function main() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    do {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Ana") {
+            if (senha == "1234") {
+                window.alert("usuario e senha corretos");
+                recorrente = false;
+            } else {
+                window.alert("usuario e senha incorretos");
+            }
+        }
+    } while (recorrente == true);
+}
+function eqnt() {
+    var usuario;
+    var senha;
+    var recorrente;
+    
+    recorrente = true;
+    while (recorrente == true) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Ana") {
+            if (senha == "1234") {
+                window.alert("usuario e senha corretos");
+                recorrente = false;
+            } else {
+                window.alert("usuario e senha incorretos");
+            }
+        }
+    }
+}
+
+</script>
+<body>
+<button onclick="main()">login</button>
+<button onclick="eqnt()">login_enquanto</button>
+</body>
+
+</html>
